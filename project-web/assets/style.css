@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #ecf4ff;
+}
+
+header {
+    display: inline;
+    text-align: center;
+}
+
+header .jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    text-align: center;
+    color: white;
+    background-color: #3EB489;
+}
+
+header nav {
+	top: 0;
+    padding: 5px;
+	position: sticky;
+    background-color: #006D5B;
+}
+
+header nav li {
+    display: inline;
+	list-style-type: none;
+	margin-right: 20px;
+}
+
+header nav a {
+    font-size: 18px;
+	font-weight: 400;
+	text-decoration: none;
+	color: white;
+}
+
+main {
+	padding: 20px;
+	overflow: auto;
+}
+
+main #content {
+    float: left;
+    width: 75%;
+}
+
+main aside {
+	float: right;
+	width: 25%;
+	padding-left: 20px;
+}
+
+main aside section img {
+    padding: 10px;
+}
+
+main aside section img:hover {
+    opacity: 0.7;
+}
+
+footer {
+	padding: 20px;
+	color: white;
+	background-color: #006D5B;
+	text-align: center;
+}
+
+h2 {
+    color: #006D5B;
+}
+
+.rounded {
+    border-radius: 70%;
+}
+
+.card {
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.featured-image {
+	width: 100%;
+	max-height: 500px;
+	object-fit: cover;
+	object-position: center;
+}
+
+.profile header {
+	text-align: center;
+}
+
+/**/
+#ContactForm1_contact-form-name,
+#ContactForm1_contact-form-email {
+    width: 100%;
+    height: auto;
+    margin: 5px auto;
+    padding: 10px;
+    background: #fff;
+    color: #444;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    transition: all 0.5s ease-out;
+}
+
+#ContactForm1_contact-form-email-message {
+    width: 100%;
+    height: 100px;
+    margin: 5px 0;
+    padding: 10px;
+    background: #fff;
+    color: #444;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    transition: all 0.5s ease-out;
+}
+
+#ContactForm1_contact-form-name:focus,
+#ContactForm1_contact-form-email:focus,
+#ContactForm1_contact-form-email-message:focus {
+    outline: none;
+    background: #fff;
+    color: #444;
+    border-color: rgb(23, 218, 169);
+    box-shadow: 0 0 5px rgba(67, 230, 167, 0.7);
+}
+
+#ContactForm1_contact-form-submit {
+    width: 100%;
+    font-family: Arial,Helvetica,sans-serif;
+    float: left;
+    background: #fff;
+    color: #aaa;
+    margin: 10px auto;
+    vertical-align: middle;
+    cursor: pointer;
+    padding: 10px 18px!important;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 3px;
+    background-image: linear-gradient(110deg, #b3ffb3 0%, #006D5B 50%, transparent 50%, transparent 100%);
+    background-size: 200%;
+    background-position: 120% 0;
+    background-repeat: no-repeat;
+    border: 1px solid #ddd;
+    transition: all .8s ease, background-position .8s ease, color .8s ease;
+}
+
+#ContactForm1_contact-form-submit:hover {
+    color: #fff;
+    background-position: 0 0;
+    border-color: #7986cb;
+}
+
+#ContactForm1_contact-form-error-message,
+#ContactForm1_contact-form-success-message {
+    width: 100%;
+    margin-top: 35px;
+}
+
+.contact-form-error-message-with-border {
+    background: #f36c60;
+    border: none;
+    box-shadow: none;
+    color: #fff;
+    padding: 5px 0;
+}
+
+.contact-form-success-message {
+    background: #4fc3f7;
+    border: none;
+    box-shadow: none;
+    color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+    main #content,
+    main aside {
+        width: 100%;
+        padding: 0;
+    }
+ }
